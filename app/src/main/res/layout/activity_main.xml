@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:textColor="@android:color/white"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:textSize="40sp"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textColor="@android:color/white"
+        android:gravity="end"
+        android:ellipsize="end"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/ac_bnt"
+                android:text="AC"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/bracket_in_btn"
+                android:text="("
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/bracket_out_btn"
+                android:text=")"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="/"
+                android:id="@+id/deg_btn"
+                tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_7"
+                android:text="7"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_8"
+                android:text="8"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_9"
+                android:text="9"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="*"
+                android:id="@+id/mul_btn"
+                tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_4"
+                android:text="4"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_5"
+                android:text="5"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_6"
+                android:text="6"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/plus_btn"
+                android:text="+"
+                tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_1"
+                android:text="1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_2"
+                android:text="2"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_3"
+                android:text="3"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/minus_btn"
+                android:text="-"
+                tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/dot_btn"
+                android:text="."
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_0"
+                android:text="0"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/back_btn"
+                android:text="back"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/egu_btn"
+                android:text="="
+                tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
